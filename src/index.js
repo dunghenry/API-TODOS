@@ -2,9 +2,9 @@ const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
 const dotenv = require('dotenv');
+dotenv.config();
 const connectDB = require('./config/connectDB');
 const routes = require('./routes');
-dotenv.config();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const corsOptions = {
