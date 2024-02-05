@@ -13,7 +13,7 @@ const bodyParser = require('body-parser');
 //   optionsSuccessStatus: 200,
 // };
 
-const whitelist = ['http://localhost:3000'];
+const whitelist = ['http://localhost:3000', 'https://spectacular-blini-a8571f.netlify.app'];
 const corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
